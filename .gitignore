@@ -1,0 +1,7 @@
+.ruby-gemset
+.ruby-version
+.bundle
+vendor
+serverless-output.yaml
+
+Gemfile.lock
