@@ -14,7 +14,7 @@ end
 ##################################
 get '/hello-world' do
   content_type :json
-  t = Test.new(thing: 'Thing!', params: @params)
+  t = Test.new(thing: 'Thing!')
   t.to_h.to_json
 end
 
