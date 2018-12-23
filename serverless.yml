@@ -1,0 +1,18 @@
+service: SinatraExample
+
+provider:
+  name: aws
+  runtime: ruby2.5
+  region: us-west-2
+  stage: dev
+
+functions:
+  sinatra:
+    handler: lambda.handler
+    events:
+      - http:
+          path: / # this matches the base path
+          method: ANY
+      - http:
+          path: /{any+}
+          method: ANY
